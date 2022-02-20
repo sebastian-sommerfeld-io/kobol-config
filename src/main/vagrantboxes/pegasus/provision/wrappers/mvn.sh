@@ -3,16 +3,15 @@
 # @brief Wrapper to use Maven from Docker container when using the default ``mvn`` command.
 #
 # @description The script is a wrapper to use Maven from a Docker container when using the default ``mvn`` command.
-# The script delegates the Maven commands to a container using image ``maven`` (see https://hub.docker.com/_/maven).
+# The script delegates the Maven commands to a container using image ``link:https://hub.docker.com/_/maven[maven]``.
 #
 # image::https://raw.githubusercontent.com/docker-library/docs/e2782b8942c1af41419536078c8d0176665a005d/maven/logo.png[]
 #
 # In order to use the ``mvn`` command, the ``xref:src_main_vagrantboxes_pegasus_provision_configure.adoc[configure.sh]``
 # script adds a symlink to access this script via ``/usr/bin/mvn``.
 #
-# The maven installation from inside the container shares its repository with the host (with the host being the
-# Vagrantbox ``pegasus``). The maven home folder is mounted into the container and is located at ``/home/vagrant/.m2``
-# on the host (= ``pegasus``).
+# The maven installation from inside the container shares its repository with the host. The maven home directory is
+# located at ``/home/vagrant/.m2`` on the Docker host (with the host being the Vagrantbox ``pegasus``).
 #
 # ==== Arguments
 #
@@ -21,10 +20,6 @@
 
 echo -e "$LOG_INFO Using the wrapper for Maven inside Docker from this Vagrantbox"
 echo -e "$LOG_INFO Working dir = $(pwd)"
-
-echo -e "$LOG_INFO Allow script to use mvn alias"
-shopt -s expand_aliases
-source /home/vagrant/.bashrc
 
 MOUNT_POINT="/usr/src/mymaven"
 IMAGE="maven"
