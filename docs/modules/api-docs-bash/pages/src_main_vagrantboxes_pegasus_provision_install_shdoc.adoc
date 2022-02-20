@@ -1,0 +1,15 @@
+= shdoc.sh
+Jenkins Pipeline <sebastian@sommerfeld.io>
+:page-toclevels: 1
+
+Install shdoc, gawk and pandoc.
+
+== Overview
+
+The script installs link:https://github.com/reconquest/shdoc[shdoc] (Markdown docs generator for bash scripts), gawk (dependency) and Pandoc (Markdown to Asciidoc converter).
+
+IMPORTANT: DON’T RUN THIS SCRIPT DIRECTLY - Script is invoked by Vagrant during link:https://www.vagrantup.com/docs/provisioning[provisioning].
+
+=== Arguments
+
+The script does not accept any parameters.

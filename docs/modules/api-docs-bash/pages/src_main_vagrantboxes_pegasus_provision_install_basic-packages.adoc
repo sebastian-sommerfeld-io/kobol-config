@@ -1,0 +1,34 @@
+= basic-packages
+Jenkins Pipeline <sebastian@sommerfeld.io>
+:page-toclevels: 1
+
+Install prerequisites and basic tools.
+
+== Overview
+
+The script installs packages as prerequisites for other installation steps. The installed packages allow `apt` to use a repository over HTTPS.
+
+* apt-transport-https
+* ca-certificates
+* gnupg-agent
+* software-properties-common
+
+Additionally the script installs basic software packages.
+
+* jq -> handle json in bash
+* ncdu
+* neofetch
+* yq -> handle yaml files in bash
+
+Lastly the script prints some information from packages shipped with the Box Image.
+
+* curl
+* git
+* htop
+* python3 / python3.9
+
+IMPORTANT: DON’T RUN THIS SCRIPT DIRECTLY - Script is invoked by Vagrant during link:https://www.vagrantup.com/docs/provisioning[provisioning].
+
+=== Arguments
+
+The script does not accept any parameters.

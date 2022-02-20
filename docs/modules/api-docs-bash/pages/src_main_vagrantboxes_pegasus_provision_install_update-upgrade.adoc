@@ -1,0 +1,15 @@
+= update-upgrade.sh
+Jenkins Pipeline <sebastian@sommerfeld.io>
+:page-toclevels: 1
+
+Update apt repository cache and upgrade packages.
+
+== Overview
+
+The script updates apt repository cache and upgrades packages.
+
+IMPORTANT: DON’T RUN THIS SCRIPT DIRECTLY - Script is invoked by Vagrant during link:https://www.vagrantup.com/docs/provisioning[provisioning].
+
+=== Arguments
+
+The script does not accept any parameters.

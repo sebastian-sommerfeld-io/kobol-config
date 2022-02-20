@@ -1,1 +1,8 @@
 * xref:index.adoc[API Docs: Bash Scripts]
+** xref:src_main_vagrantboxes_pegasus_clean.adoc[src/main/vagrantboxes/pegasus/clean.sh]
+** xref:src_main_vagrantboxes_pegasus_provision_configure.adoc[src/main/vagrantboxes/pegasus/provision/configure.sh]
+** xref:src_main_vagrantboxes_pegasus_provision_install_basic-packages.adoc[src/main/vagrantboxes/pegasus/provision/install/basic-packages.sh]
+** xref:src_main_vagrantboxes_pegasus_provision_install_shdoc.adoc[src/main/vagrantboxes/pegasus/provision/install/shdoc.sh]
+** xref:src_main_vagrantboxes_pegasus_provision_install_update-upgrade.adoc[src/main/vagrantboxes/pegasus/provision/install/update-upgrade.sh]
+** xref:src_main_vagrantboxes_pegasus_start.adoc[src/main/vagrantboxes/pegasus/start.sh]
+** xref:src_main_vagrantboxes_pegasus_stop.adoc[src/main/vagrantboxes/pegasus/stop.sh]

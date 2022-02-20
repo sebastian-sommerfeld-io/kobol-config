@@ -1,0 +1,13 @@
+= start.sh
+Jenkins Pipeline <sebastian@sommerfeld.io>
+:page-toclevels: 1
+
+Start Vagrantbox ``pegasus''.
+
+== Overview
+
+When virtual machines are booted for the first time, VMs get provisioned.
+
+=== Arguments
+
+The script does not accept any parameters.
