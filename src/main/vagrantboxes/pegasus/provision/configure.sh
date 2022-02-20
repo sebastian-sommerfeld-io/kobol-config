@@ -48,5 +48,6 @@ for alias in "${aliases[@]}"; do
 done
 echo "[DONE] Added aliases to $home/.bashrc (if not existing)"
 
+# Setup symlinks for Docker wrapper scripts
 sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/mvn.sh /usr/bin/mvn
 echo "[DONE] Symlink setup for Docker wrapper scripts"
