@@ -1,6 +1,6 @@
 #!/bin/bash
 # @file start.sh
-# @brief Start Vagrantbox "pegasus".
+# @brief Start Vagrantbox ``pegasus``.
 #
 # @description When virtual machines are booted for the first time, VMs get provisioned.
 #

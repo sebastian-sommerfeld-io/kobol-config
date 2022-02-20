@@ -26,4 +26,4 @@ sudo mkdir -p /opt/shdoc
 echo "[INFO] Install pandoc"
 sudo apt-get install -y pandoc
 
-echo "[DONE] Installed shdoc"
+echo "[DONE] Installed shdoc and dependencies"

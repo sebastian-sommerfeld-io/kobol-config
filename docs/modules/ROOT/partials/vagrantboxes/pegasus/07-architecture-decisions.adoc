@@ -1,4 +1,2 @@
 == Architecture Decisions
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-
-CAUTION: Todo ...
+. The actual development tools are encapsulated to make sure a working environment can always be started. This way running any update comes without any risk because reverting to a working setup can be done easily. This becomes even more easy when every update has a dedicated git branch. Therefore the actual tools are built into a Vagrantbox.

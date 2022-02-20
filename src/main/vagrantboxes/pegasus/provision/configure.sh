@@ -4,8 +4,8 @@
 #
 # @description The scripts adds settings to the ``~/.bashrc`` file of the user "vagrant".
 #
-# . Update bash prompt
-# . Write aliases to .bashrc file
+# * Update bash prompt
+# * Write aliases to .bashrc file
 #
 # IMPORTANT: DON'T RUN THIS SCRIPT DIRECTLY - Script is invoked by Vagrant during link:https://www.vagrantup.com/docs/provisioning[provisioning].
 #

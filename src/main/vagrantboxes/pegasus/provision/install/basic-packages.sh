@@ -3,21 +3,21 @@
 # @brief Install prerequisites and basic tools.
 #
 # @description The script installs packages as prerequisites for other installation steps. The installed packages
-# allow ``apt`` to use a repository over HTTPS.
+# allow ``apt`` to use a repository over HTTPS:
 #
 # * apt-transport-https
 # * ca-certificates
 # * gnupg-agent
 # * software-properties-common
 #
-# Additionally the script installs basic software packages.
+# Additionally the script installs basic software packages:
 #
 # * jq -> handle json in bash
 # * ncdu
 # * neofetch
 # * yq -> handle yaml files in bash
 #
-# Lastly the script prints some information from packages shipped with the Box Image.
+# Lastly the script prints some information from packages shipped with the Box Image:
 #
 # * curl
 # * git
