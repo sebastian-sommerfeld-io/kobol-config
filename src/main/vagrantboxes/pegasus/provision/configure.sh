@@ -6,6 +6,7 @@
 #
 # * Update bash prompt
 # * Write aliases to .bashrc file
+# * Setup symlinks for Docker wrapper scripts
 #
 # IMPORTANT: DON'T RUN THIS SCRIPT DIRECTLY - Script is invoked by Vagrant during link:https://www.vagrantup.com/docs/provisioning[provisioning].
 #
@@ -46,3 +47,6 @@ for alias in "${aliases[@]}"; do
   grep -qxF "$alias" "$bashrc" || echo "$alias" >> "$bashrc"
 done
 echo "[DONE] Added aliases to $home/.bashrc (if not existing)"
+
+sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/mvn.sh /usr/bin/mvn
+echo "[DONE] Symlink setup for Docker wrapper scripts"

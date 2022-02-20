@@ -11,10 +11,10 @@
 |===
 
 === Use this Vagrantbox
-. Start Vagrantbox by running `start.sh`
+. Start Vagrantbox by running `xref:api-docs-bash:src_main_vagrantboxes_pegasus_start.adoc[start.sh]`
 . Connect to Bash using `vagrant ssh` (no username / password needed)
-. Stop Vagrantbox using `stop.sh`
-. Remove all generated files, artifacts and Virtualbox files associated with this Vagrantbox by running `clean.sh`.
+. Stop Vagrantbox using `xref:api-docs-bash:src_main_vagrantboxes_pegasus_stop.adoc[stop.sh]`
+. Remove all generated files, artifacts and Virtualbox files associated with this Vagrantbox by running `xref:api-docs-bash:src_main_vagrantboxes_pegasus_clean.adoc[clean.sh]`.
 
 === Provisioning
 This Vagrantbox is provisioned on (initial) startup. To link:https://www.vagrantup.com/docs/provisioning[provision the Vagrantbox] again, run `vagrant up --provision` on a stopped environment and `vagrant provision` or `vagrant reload --provision` on a running environment.
