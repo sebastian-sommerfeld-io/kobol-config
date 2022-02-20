@@ -1,0 +1,19 @@
+= Pegasus
+Sebastian Sommerfeld <sebastian@sommerfeld.io>
+:imagesdir: ../../../../docs/modules/ROOT/assets/images
+
+include::../../../../docs/modules/ROOT/partials/vagrantboxes/pegasus/01-intro.adoc[]
+
+include::../../../../docs/modules/ROOT/partials/vagrantboxes/pegasus/02-project-name.adoc[]
+
+include::../../../../docs/modules/ROOT/partials/vagrantboxes/pegasus/03-requirements-and-goals.adoc[]
+
+include::../../../../docs/modules/ROOT/partials/vagrantboxes/pegasus/04-install.adoc[]
+
+include::../../../../docs/modules/ROOT/partials/vagrantboxes/pegasus/05-usage.adoc[]
+
+include::../../../../docs/modules/ROOT/partials/vagrantboxes/pegasus/06-building-block-view.adoc[]
+
+include::../../../../docs/modules/ROOT/partials/vagrantboxes/pegasus/07-architecture-decisions.adoc[]
+
+include::../../../../docs/modules/ROOT/partials/vagrantboxes/pegasus/08-technical-risks.adoc[]

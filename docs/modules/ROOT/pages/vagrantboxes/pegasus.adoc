@@ -3,6 +3,8 @@ Sebastian Sommerfeld <sebastian@sommerfeld.io>
 
 include::partial$vagrantboxes/pegasus/01-intro.adoc[]
 
+include::partial$vagrantboxes/pegasus/02-project-name.adoc[]
+
 include::partial$vagrantboxes/pegasus/03-requirements-and-goals.adoc[]
 
 include::partial$vagrantboxes/pegasus/04-install.adoc[]

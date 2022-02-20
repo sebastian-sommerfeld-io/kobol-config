@@ -7,3 +7,5 @@ The following services are up and running when the Vagrantbox is started (and pr
 |link:https://console.cloud.google.com/gcr/images/cadvisor/GLOBAL/cadvisor[cAdvisor] |http://localhost:7101 |-
 |link:https://www.portainer.io[Portainer] |http://localhost:7990 |admin (admin)
 |===
+
+Additionally ports link:http://localhost:7000[7000] and link:http://localhost:7080[7080] are forwarded as well to avoid the need for restarts or reloads everytime a service is started inside the Vagrantbox.

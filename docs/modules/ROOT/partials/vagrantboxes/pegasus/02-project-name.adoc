@@ -1,0 +1,6 @@
+== Why is this Vagrantbox called Pegasus?
+The link:https://en.battlestarwikiclone.org/wiki/Pegasus_(TRS)[Battlestar Pegasus] is a spaceship from Battlestar Galactica. For this Vagrantbox the name "Pegasus" represents an entity smaller than the Planet Kobol (hence smaller than the physical workstation "xref:index.adoc[kobol]") but larger than a single service / tool / utility.
+
+The Battlestar Pegasus is a Mercury class battlestar and was the crown jewel of the Colonial Fleet with a big reputation.
+
+Since this Vagrantbox contains all essential development tools, it is the "crown jewel" of my toolbox and most-use Vagrantbox.

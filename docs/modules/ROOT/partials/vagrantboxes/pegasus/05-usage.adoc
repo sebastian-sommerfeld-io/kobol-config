@@ -1,10 +1,8 @@
 == Usage
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
 [cols="1,3", options="header"]
 |===
 |Category |Info
-|Box Image |ubuntu/impish64 = 21.10
+|Box Image |ubuntu/impish64 (= Ubuntu 21.10)
 |Provider |Virtualbox
 |VM-Name & Hostname |pegasus
 |User (Password) |vagrant (vagrant)
@@ -12,4 +10,32 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 |System Requirements |CPUs = 4, RAM = 8195 MB
 |===
 
-CAUTION: Todo ...
+=== Use this Vagrantbox
+. Start Vagrantbox by running `start.sh`
+. Connect to Bash using `vagrant ssh` (no username / password needed)
+. Stop Vagrantbox using `stop.sh`
+. Remove all generated files, artifacts and Virtualbox files associated with this Vagrantbox by running `clean.sh`.
+
+=== Provisioning
+This Vagrantbox is provisioned on (initial) startup. To link:https://www.vagrantup.com/docs/provisioning[provision the Vagrantbox] again, run `vagrant up --provision` on a stopped environment and `vagrant provision` or `vagrant reload --provision` on a running environment.
+
+==== Installed packages
+For packages shipped with this Vagrantbox see xref:api-docs-bash:index.adoc[] (install-scripts are listed in API Docs). These scripts only list the packages that are installed on top. The packages shipped with the Virtualbox image are not listed.
+
+IMPORTANT: Before you add packages to provisioning, make sure installing the package is the best way to got. *Always try to use a Docker Image first*!
+
+==== Software wrapped in Docker Containers
+For software wrapped in Docker Containers, see xref:api-docs-bash:index.adoc[] (wrapper-scripts are listed in API Docs). Most of the tools are still usable via their respective default command (there is either a /usr/bin entry or an alias in /home/vagrant/.bashrc pointing to the wrapper script). For Details see the respective script in xref:api-docs-bash:index.adoc[].
+
+=== Expose port when Vagrantbox is up and running
+Add port forwarding (`pegasus.vm.network "forwarded_port", host: 7777, guest: 7777`) to Vagrantfile and reload config using `vagrant reload`.
+
+=== Expose rage of ports
+To expose a range of ports, add this snippet to Vagrantfile. Keep in mind that all ports will be allocated on the host machine.
+
+[source, ruby]
+----
+for i in 7800..7888
+    config.vm.network :forwarded_port, guest: i, host: i
+end
+----
