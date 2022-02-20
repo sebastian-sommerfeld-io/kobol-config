@@ -10,12 +10,11 @@ yamllint:
   script:
     - yamllint .
 
-#shell-check:
-#  image: koalaman/shellcheck-alpine:stable
-#  stage: verify
-#  before_script:
-#    - shellcheck --version
-#  script:
-#    - shellcheck src/**/**/*.sh
-#    - shellcheck src/**/**/**/*.sh
-#    - shellcheck src/**/**/**/**/*.sh
+shell-check:
+  image: koalaman/shellcheck-alpine:stable
+  stage: verify
+  before_script:
+    - shellcheck --version
+  script:
+    - shellcheck src/**/**/**/*.sh
+    - shellcheck src/**/**/**/**/*.sh
