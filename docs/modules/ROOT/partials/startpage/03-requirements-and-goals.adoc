@@ -1,0 +1,7 @@
+== Requirements Overview
+. Setup my local workstation with minimal manual interactions.
+. The actual develompemt tools must be encapsulated to make sure a working infrastructure can always be started. Therefore the actual workers are Vagrantboxes.
+. Test the setup regularly and automated to ensure a new installation from scratch works.
+
+== Quality Goals
+. The whole setup of my local workstation follows is Infrastructure as Code

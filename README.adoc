@@ -1,0 +1,23 @@
+= Kobol Configuration
+Sebastian Sommerfeld <sebastian@sommerfeld.io>
+:imagesdir: docs/modules/ROOT/assets/images
+
+include::docs/modules/ROOT/partials/startpage/01-intro.adoc[]
+
+include::docs/modules/ROOT/partials/startpage/02-project-name.adoc[]
+
+include::docs/modules/ROOT/partials/startpage/03-requirements-and-goals.adoc[]
+
+include::docs/modules/ROOT/partials/startpage/04-install.adoc[]
+
+include::docs/modules/ROOT/partials/startpage/05-usage.adoc[]
+
+include::docs/modules/ROOT/partials/startpage/06-building-block-view.adoc[]
+
+include::docs/modules/ROOT/partials/startpage/07-architecture-decisions.adoc[]
+
+include::docs/modules/ROOT/partials/startpage/08-technical-risks.adoc[]
+
+include::docs/modules/ROOT/partials/startpage/10-license.adoc[]
+
+include::docs/modules/ROOT/partials/startpage/09-contact.adoc[]

@@ -1,0 +1,8 @@
+== Risks and Technical Debts
+Scale for Probability and Impact: Low, Medium and High
+
+[cols="^1,2,7a,1,1,4a", options="header"]
+|===
+|# |Title |Description |Probability |Impact |Response
+|{counter:usage} |External monitors remain dark with Ubuntu 21.04 |After updating to Ubuntu 21.04 the two external screens are recognized but remain dark. Screens are connected via DisplayPort through a USB-C Hub. All screens can be configured but the laptop screen is the only one showing the actual desktop. The DisplayPort screens say there is "No DP signal from your device". For details see link:https://askubuntu.com/questions/1350593/ubuntu-21-04-with-three-external-monitors[my question on askubuntu.com].+++<br><br>+++*Workaround:* Sticking with Ubuntu 20.10 for the moment. |High |High |link:https://bugs.launchpad.net/ubuntu/+source/xorg-server/+bug/1931547[Known problem with Ubuntu 21.04 (or rather the xorg-server package)]. This bug was fixed in the package xorg-server `2:1.20.11-1ubuntu1~20.04.2`.
+|===
