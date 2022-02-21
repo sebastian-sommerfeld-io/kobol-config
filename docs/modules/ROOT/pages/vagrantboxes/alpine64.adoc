@@ -1,0 +1,10 @@
+= Alpine64
+Sebastian Sommerfeld <sebastian@sommerfeld.io>
+
+include::partial$vagrantboxes/alpine64/01-intro.adoc[]
+
+include::partial$vagrantboxes/alpine64/03-requirements-and-goals.adoc[]
+
+include::partial$vagrantboxes/alpine64/04-install.adoc[]
+
+include::partial$vagrantboxes/alpine64/05-usage.adoc[]

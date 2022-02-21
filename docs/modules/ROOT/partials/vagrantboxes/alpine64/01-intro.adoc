@@ -1,0 +1,8 @@
+Simple Vagrantbox for testing purposes following an infrastructure as code approach.
+
+[cols="1,4", options="header"]
+|===
+|What |Where to find
+|Repository |+++<i class="fab fa-gitlab"></i>+++ https://gitlab.com/sommerfeld.sebastian/kobol-configuration/-/tree/main/src/main/vagrantboxes/alpine64
+|Documentation |+++<i class="far fa-file-alt"></i>+++ https://www.sommerfeld.io/docs/kobol-configuration-docs/main/vagrantboxes/alpine64.html
+|===
