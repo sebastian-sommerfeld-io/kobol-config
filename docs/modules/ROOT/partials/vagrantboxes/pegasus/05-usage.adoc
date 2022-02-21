@@ -7,7 +7,7 @@
 |VM-Name & Hostname |pegasus
 |User (Password) |vagrant (vagrant)
 |Port Range for this VM |7000 - 7999
-|System Requirements |CPUs = 4, RAM = 8195 MB
+|System Requirements |CPUs = 4, RAM = 8192 MB
 |===
 
 === Use this Vagrantbox
