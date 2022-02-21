@@ -14,7 +14,7 @@ vagrant destroy -f
 
 echo -e "$LOG_INFO Cleanup filesystem (.vagrant and target folders)"
 rm -rf .vagrant
-rm -rf .target
+#rm -rf .target
 rm -rf ../../../../target/*
 
 echo -e "$LOG_DONE ------------------------------------------------------------------"

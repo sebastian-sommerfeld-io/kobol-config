@@ -1,0 +1,11 @@
+= ubuntu-headless
+Sebastian Sommerfeld <sebastian@sommerfeld.io>
+:imagesdir: ../../../../docs/modules/ROOT/assets/images
+
+include::../../../../docs/modules/ROOT/partials/vagrantboxes/ubuntu-headless/01-intro.adoc[]
+
+include::../../../../docs/modules/ROOT/partials/vagrantboxes/ubuntu-headless/03-requirements-and-goals.adoc[]
+
+include::../../../../docs/modules/ROOT/partials/vagrantboxes/ubuntu-headless/04-install.adoc[]
+
+include::../../../../docs/modules/ROOT/partials/vagrantboxes/ubuntu-headless/05-usage.adoc[]

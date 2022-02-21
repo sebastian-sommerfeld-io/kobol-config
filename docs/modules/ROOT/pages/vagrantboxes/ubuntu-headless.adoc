@@ -1,0 +1,10 @@
+= Ubuntu (headless)
+Sebastian Sommerfeld <sebastian@sommerfeld.io>
+
+include::partial$vagrantboxes/ubuntu-headless/01-intro.adoc[]
+
+include::partial$vagrantboxes/ubuntu-headless/03-requirements-and-goals.adoc[]
+
+include::partial$vagrantboxes/ubuntu-headless/04-install.adoc[]
+
+include::partial$vagrantboxes/ubuntu-headless/05-usage.adoc[]

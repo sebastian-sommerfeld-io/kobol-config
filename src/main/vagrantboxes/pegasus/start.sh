@@ -8,8 +8,8 @@
 #
 # The script does not accept any parameters.
 
-echo -e "$LOG_INFO Prepare .target directory for vagrantbox"
-mkdir .target
+#echo -e "$LOG_INFO Prepare .target directory for vagrantbox"
+#mkdir .target
 
 echo -e "$LOG_INFO Start Vagrant Boxes"
 vagrant up

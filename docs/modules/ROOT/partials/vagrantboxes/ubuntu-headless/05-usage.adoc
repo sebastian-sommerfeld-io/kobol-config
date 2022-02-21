@@ -2,9 +2,9 @@
 [cols="1,3", options="header"]
 |===
 |Category |Info
-|Box Image |alpine/alpine64
+|Box Image |ubuntu/impish64 (= Ubuntu 21.10)
 |Provider |Virtualbox
-|VM Name & Hostname |alpine64
+|VM Name & Hostname |ubuntu-headless
 |User (Password) |vagrant (vagrant)
 |===
 

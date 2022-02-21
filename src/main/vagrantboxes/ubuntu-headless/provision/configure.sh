@@ -1,12 +1,11 @@
 #!/bin/bash
 # @file configure.sh
-# @brief Provisioning script for Vagrantbox ``pegasus``.
+# @brief Provisioning script for Vagrantbox ``ubuntu-headless``.
 #
 # @description The scripts adds settings to the ``~/.bashrc`` file of the user "vagrant".
 #
 # * Update bash prompt
 # * Write aliases to .bashrc file
-# * Setup symlinks for Docker wrapper scripts
 #
 # IMPORTANT: DON'T RUN THIS SCRIPT DIRECTLY - Script is invoked by Vagrant during link:https://www.vagrantup.com/docs/provisioning[provisioning].
 #
@@ -23,7 +22,7 @@ echo "[INFO]  ==================================================================
 
 # Update bash prompt
 bashrc="$home/.bashrc"
-promptDefinition="\${debian_chroot:+(\$debian_chroot)}\[\033[01;33m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
+promptDefinition="\${debian_chroot:+(\$debian_chroot)}\[\033[01;35m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 grep -qxF "export PS1='${promptDefinition}'" "$bashrc" || echo "export PS1='${promptDefinition}'" >>"$bashrc"
 echo "[DONE] Changed prompt"
 
@@ -32,8 +31,6 @@ aliases=(
   'alias ll="ls -alFh --color=auto"'
   'alias ls="ls -a --color=auto"'
   'alias grep="grep --color=auto"'
-  "cheatsheet() { clear && curl \"cheat.sh/\$1\" ; }"
-  'alias pull-all-repos="git all pull"'
   'export LOG_DONE="[\e[32mDONE\e[0m]"'
   'export LOG_ERROR="[\e[1;31mERROR\e[0m]"'
   'export LOG_INFO="[\e[34mINFO\e[0m]"'
@@ -46,12 +43,3 @@ for alias in "${aliases[@]}"; do
   grep -qxF "$alias" "$bashrc" || echo "$alias" >> "$bashrc"
 done
 echo "[DONE] Added aliases to $home/.bashrc (if not existing)"
-
-# Setup symlinks for Docker wrapper scripts
-sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/antora.sh /usr/bin/antora
-sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/groovy.sh /usr/bin/groovy
-sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/hugo.sh /usr/bin/hugo
-sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/mvn.sh /usr/bin/mvn
-sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/shellcheck.sh /usr/bin/shellcheck
-sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/yamllint.sh /usr/bin/yamllint
-echo "[DONE] Symlink setup for Docker wrapper scripts"
