@@ -28,4 +28,5 @@ TAG="3.8.4-openjdk-17"
 docker run -it --rm \
   --volume "$(pwd):$MOUNT_POINT" \
   --volume /home/vagrant/.m2:/root/.m2 \
-  --workdir "$MOUNT_POINT" "$IMAGE:$TAG" mvn "$@"
+  --workdir "$MOUNT_POINT" \
+  "$IMAGE:$TAG" mvn "$@"

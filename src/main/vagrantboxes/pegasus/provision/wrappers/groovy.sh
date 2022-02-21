@@ -23,6 +23,7 @@ MOUNT_POINT="/home/groovy/scripts"
 IMAGE="groovy"
 TAG="4.0.0-jdk17"
 
-docker run --rm \
+docker run -it --rm \
   --volume "$(pwd):$MOUNT_POINT" \
-  --workdir "$MOUNT_POINT" "$IMAGE:$TAG" groovy "$@"
+  --workdir "$MOUNT_POINT" \
+  "$IMAGE:$TAG" groovy "$@"

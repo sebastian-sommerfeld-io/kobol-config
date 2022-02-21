@@ -22,10 +22,15 @@ This Vagrantbox is provisioned on (initial) startup. To link:https://www.vagrant
 ==== Installed packages
 For packages shipped with this Vagrantbox see xref:api-docs-bash:index.adoc[] (install-scripts are listed in API Docs). These scripts only list the packages that are installed on top. The packages shipped with the Virtualbox image are not listed.
 
+The Docker installation inside this Vagrantbox is done by the Vagrant plugin "link:https://github.com/leighmcculloch/vagrant-docker-compose[vagrant-docker-compose]".
+
 IMPORTANT: Before you add packages to provisioning, make sure installing the package is the best way to got. *Always try to use a Docker image first*!
 
 ==== Software wrapped in Docker Containers
 For software wrapped in Docker Containers, see xref:api-docs-bash:index.adoc[] (wrapper-scripts are listed in API Docs). Most of the tools are still usable via their respective default command (there is either a /usr/bin entry or an alias in /home/vagrant/.bashrc pointing to the wrapper script). For Details see the respective script in xref:api-docs-bash:index.adoc[].
+
+==== Node Modules
+IMPORTANT: Avoid installing node modules globally. All node modules should be specific to the respective project.
 
 === Expose port when Vagrantbox is up and running
 Add port forwarding (`pegasus.vm.network "forwarded_port", host: 7777, guest: 7777`) to Vagrantfile and reload config using `vagrant reload`.

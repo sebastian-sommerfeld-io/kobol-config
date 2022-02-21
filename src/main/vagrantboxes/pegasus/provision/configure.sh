@@ -49,6 +49,10 @@ done
 echo "[DONE] Added aliases to $home/.bashrc (if not existing)"
 
 # Setup symlinks for Docker wrapper scripts
-sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/mvn.sh /usr/bin/mvn
+sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/antora.sh /usr/bin/antora
 sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/groovy.sh /usr/bin/groovy
+sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/hugo.sh /usr/bin/hugo
+sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/mvn.sh /usr/bin/mvn
+sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/shellcheck.sh /usr/bin/shellcheck
+sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/yamllint.sh /usr/bin/yamllint
 echo "[DONE] Symlink setup for Docker wrapper scripts"

@@ -8,4 +8,6 @@ The following services are up and running when the Vagrantbox is started (and pr
 |link:https://www.portainer.io[Portainer] |http://localhost:7990 |admin (admin)
 |===
 
+Port link:http://localhost:7313[7313] is forwarded in order to preview a hugo website.
+
 Additionally ports link:http://localhost:7000[7000] and link:http://localhost:7080[7080] are forwarded as well to avoid the need for restarts or reloads everytime a service is started inside the Vagrantbox.
