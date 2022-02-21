@@ -1,0 +1,5 @@
+= Kobol Configuration
+Sebastian Sommerfeld <sebastian@sommerfeld.io>
+:imagesdir: docs/modules/ROOT/assets/images
+
+include::docs/modules/ROOT/partials/startpage/10-license.adoc[]
