@@ -1,4 +1,6 @@
 == Usage
-Since each service brings its own set of features, using a service is highly dependent on the respective service. For details take a look at the respective docs for the service.
+Since each service brings its own set of features, requirements and dependencies the way how to setup and use a respective service is highly dependent on the respective service. For details take a look at the respective docs for the service.
 
-include::ROOT:partial$startpage/services.adoc[]
+The most interesting services are:
+
+. Vagrantbox xref:ROOT:vagrantboxes/pegasus.adoc[]
