@@ -1,1 +1,8 @@
-include::ROOT:partial$startpage/04-install.adoc[]
+In order to run this project, the following dependencies must be met:
+
+. Install Virtualbox and Vagrant
+.. Install the Vagrant Plugin "link:https://github.com/leighmcculloch/vagrant-docker-compose[vagrant-docker-compose]" using `vagrant plugin install vagrant-docker-compose`
+. The host machine should have git installed -> the Vagrantbox "pegasus" expects a `~/.gitconfig` file in order to copy this file into the Vagrantbox.
+. The host machine should have `~/.ssh`, `~/.tmp` and `~/.work` directories -> the Vagrantbox "pegasus" expects these folders in order to copy them into the Vagrantbox
+
+CAUTION: Since this project expects certain files and folders from the host in a Linux way, it will probably not work out-of-the-box on Windows machines. Using WSL2 on Windows might work. Note that both assumptions are not verified.

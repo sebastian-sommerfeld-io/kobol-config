@@ -1,0 +1,3 @@
+The most interesting services are:
+
+. Vagrantbox xref:ROOT:vagrantboxes/pegasus.adoc[]

@@ -19,4 +19,4 @@ include::partial$startpage/08-technical-risks.adoc[]
 
 include::partial$startpage/09-contact.adoc[]
 
-include::partial$startpage/10-license.adoc[]
+//include::partial$startpage/10-license.adoc[]
