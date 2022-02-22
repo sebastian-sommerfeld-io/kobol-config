@@ -1,6 +1,6 @@
 #!/bin/bash
 # @file stop.sh
-# @brief Stop Vagrantbox ``pegasus``.
+# @brief Stop Vagrantbox pegasus.
 #
 # @description The scripts gracefully stops Vagrantbox.
 #

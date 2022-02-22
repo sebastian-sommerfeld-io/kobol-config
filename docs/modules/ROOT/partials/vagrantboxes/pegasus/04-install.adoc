@@ -1,3 +1,4 @@
+== Install
 In order to run this project, the following dependencies must be met:
 
 . Install Virtualbox and Vagrant

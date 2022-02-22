@@ -1,6 +1,6 @@
 #!/bin/bash
 # @file clean.sh
-# @brief Remove Vagrantbox ``pegasus``.
+# @brief Remove Vagrantbox pegasus.
 #
 # @description The script removes Vagrantbox and cleans up the filesystem leaving no trace of the virtual machine setup
 # behind. Run ``stop.sh`` first before cleaning up.
