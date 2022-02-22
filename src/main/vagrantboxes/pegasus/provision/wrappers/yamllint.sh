@@ -25,3 +25,5 @@ docker run -it --rm \
   --volume "$(pwd):$MOUNT_POINT" \
   --workdir "$MOUNT_POINT" \
   "$IMAGE:$TAG" "$@"
+
+echo -e "$LOG_DONE Finished yamllint"

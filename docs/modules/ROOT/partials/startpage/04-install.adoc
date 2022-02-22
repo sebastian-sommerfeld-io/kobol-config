@@ -30,5 +30,5 @@ Once the basic OS is installed, perform the following steps on your machine:
 . Enable the Steam Beta Client: Go to Steam -> Settings
 . In the account tab, click change in the Steam Beta Update and click on Steam Beta Update
 . Enable Steam Play for all games
-. Go again to Settings and on the Steam Play Tab click "Enable Steam Play for all titles"
+. Go to Settings -> Steam Play Tab and click "Enable Steam Play for all titles"
 . Install the respective games
