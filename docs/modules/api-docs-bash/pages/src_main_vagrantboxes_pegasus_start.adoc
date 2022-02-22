@@ -2,7 +2,7 @@
 Jenkins Pipeline <sebastian@sommerfeld.io>
 :page-toclevels: 1
 
-Start Vagrantbox ``pegasus''.
+Start Vagrantbox pegasus.
 
 == Overview
 

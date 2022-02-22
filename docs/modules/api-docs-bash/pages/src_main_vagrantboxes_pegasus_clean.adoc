@@ -2,7 +2,7 @@
 Jenkins Pipeline <sebastian@sommerfeld.io>
 :page-toclevels: 1
 
-Remove Vagrantbox ``pegasus''.
+Remove Vagrantbox pegasus.
 
 == Overview
 

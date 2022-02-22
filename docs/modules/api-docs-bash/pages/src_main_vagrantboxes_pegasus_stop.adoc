@@ -2,7 +2,7 @@
 Jenkins Pipeline <sebastian@sommerfeld.io>
 :page-toclevels: 1
 
-Stop Vagrantbox ``pegasus''.
+Stop Vagrantbox pegasus.
 
 == Overview
 

@@ -1,16 +1,12 @@
-= configure.sh
+= update-upgrade.sh
 Jenkins Pipeline <sebastian@sommerfeld.io>
 :page-toclevels: 1
 
-Provisioning script for Vagrantbox `pegasus`.
+Update apt repository cache and upgrade packages.
 
 == Overview
 
-The scripts adds settings to the `~/.bashrc` file of the user ``vagrant''.
-
-* Update bash prompt
-* Write aliases to .bashrc file
-* Setup symlinks for Docker wrapper scripts
+The script updates apt repository cache and upgrades packages.
 
 IMPORTANT: DON’T RUN THIS SCRIPT DIRECTLY - Script is invoked by Vagrant during link:https://www.vagrantup.com/docs/provisioning[provisioning].
 
