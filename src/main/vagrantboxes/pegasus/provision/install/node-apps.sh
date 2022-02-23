@@ -1,5 +1,5 @@
 #!/bin/bash
-# @file install-node-apps.sh
+# @file node-apps.sh
 # @brief Install node applications.
 #
 # @description The script installs applications for link:https://nodejs.org/en[node].
@@ -17,7 +17,7 @@
 # The script does not accept any parameters.
 
 
-echo -e "$LOG_INFO Install node apps"
+echo "[INFO] Install node apps"
 
 npm install --global @antora/cli@2.3 @antora/site-generator-default@2.3
 npm install --global @bitwarden/cli
@@ -25,4 +25,4 @@ npm install --global folderslint
 npm install --global gulp-cli
 npm install --global webserver
 
-echo -e "$LOG_DONE Installed node apps"
+echo "[DONE] Installed node apps"

@@ -45,4 +45,4 @@ gitignore -up-> vb
 . Wrappers are scripts wrapping Docker containers to use them by their respective default command.
 
 === Services
-include::ROOT:partial$vagrantboxes/pegasus/docker-services.adoc[]
+include::ROOT:partial$vagrantboxes/pegasus/services.adoc[]

@@ -27,17 +27,20 @@ Vagrant.configure(2) do |config|
 
         pegasus.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'" # to prevent tty errors
         pegasus.vm.provision "shell", path: "provision/configure.sh"
-        pegasus.vm.provision "shell", path: "provision/install/update-upgrade.sh"
-        pegasus.vm.provision "shell", path: "provision/install/basic-packages.sh"
-        pegasus.vm.provision "shell", path: "provision/install/node.sh"
-        pegasus.vm.provision "shell", path: "provision/install/node-apps.sh"
-        pegasus.vm.provision "shell", path: "provision/install/shdoc.sh"
         pegasus.vm.provision :docker
         pegasus.vm.provision :docker_compose, yml: "/vagrant/docker/services/docker-compose.yml", run: "always"
+        pegasus.vm.provision "shell", path: "provision/install/update-upgrade.sh"
+        pegasus.vm.provision "shell", path: "provision/install/basic-packages.sh"
+        pegasus.vm.provision "shell", path: "provision/install/java.sh"
+        pegasus.vm.provision "shell", path: "provision/install/node.sh"
+        pegasus.vm.provision "shell", path: "provision/install/node-apps.sh"
+        pegasus.vm.provision "shell", path: "provision/install/rundeck-cli.sh"
+        pegasus.vm.provision "shell", path: "provision/install/shdoc.sh"
 
         # in use -> see src/main/vagrantboxes/pegasus/docker/services/docker-compose.yml
         pegasus.vm.network "forwarded_port", host: 7100, guest: 9100
         pegasus.vm.network "forwarded_port", host: 7101, guest: 7101
+        pegasus.vm.network "forwarded_port", host: 7440, guest: 7440
         pegasus.vm.network "forwarded_port", host: 7990, guest: 7990
 
         # prepared

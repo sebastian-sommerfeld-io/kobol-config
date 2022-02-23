@@ -4,6 +4,8 @@
 #
 # @description When virtual machines are booted for the first time, VMs get provisioned.
 #
+# include::ROOT:partial$vagrantboxes/pegasus/services.adoc[]
+#
 # ==== Arguments
 #
 # The script does not accept any parameters.
