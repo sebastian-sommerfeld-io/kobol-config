@@ -48,13 +48,9 @@ services:
 
   # Schedule tasks and jobs
   rundeck:
-    image: rundeck/rundeck:3.4.10
+    image: pegasus/rundeck:latest
     container_name: rundeck
     command: -Dserver.http.port=7440
-    environment:
-      - RUNDECK_GRAILS_URL=http://localhost:7440
-      - RUNDECK_SERVER_ADDRESS=0.0.0.0 # Allow access from outside (not just localhost which is the container itself)
-      #- RUNDECK_TOKENS_FILE -> https://docs.rundeck.com/docs/administration/configuration/docker.html#authentication
     tty: true
     volumes:
       - rundeck_data:/home/rundeck/server/data

@@ -14,7 +14,7 @@
 #mkdir .target
 
 echo -e "$LOG_INFO Start Vagrant Boxes"
-vagrant up
+time vagrant up
 
 echo -e "$LOG_DONE ------------------------------------------------------------------"
 echo -e "$LOG_DONE All Vagrant Boxes up and running"

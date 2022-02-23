@@ -1,0 +1,21 @@
+- defaultTab: nodes
+  description: ''
+  executionEnabled: true
+  id: 8562ed5e-8d7b-4451-8963-73ea418ac17a
+  loglevel: INFO
+  name: System information
+  nodeFilterEditable: false
+  plugins:
+    ExecutionLifecycle: null
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - description: hostname
+      exec: echo "$HOSTNAME"
+    - description: uptime
+      exec: uptime
+    - description: HDD
+      exec: df -h
+    keepgoing: false
+    strategy: parallel
+  uuid: 8562ed5e-8d7b-4451-8963-73ea418ac17a

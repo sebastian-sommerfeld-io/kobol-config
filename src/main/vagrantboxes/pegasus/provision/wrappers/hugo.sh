@@ -10,7 +10,7 @@
 #
 # ==== Arguments
 #
-# * *$@* (array): Original maven arguments (e.g. ``clean install``)
+# * *$@* (array): Original arguments (e.g. ``clean install``)
 
 
 echo -e "$LOG_INFO Using the wrapper for hugo inside Docker from this Vagrantbox"
