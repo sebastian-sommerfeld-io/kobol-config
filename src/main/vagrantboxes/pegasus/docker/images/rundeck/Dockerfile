@@ -1,14 +1,6 @@
 FROM rundeck/rundeck:3.4.10
 LABEL maintainer="sebastian@sommerfeld.io"
 
-#USER root
-#RUN apt-get update \
-#    && apt-get install -y software-properties-common \
-#    && add-apt-repository -y --update ppa:ansible/ansible \
-#    && apt-get install -y ansible
-#
-#USER "${uid}:${gid}"
-
 COPY assets/inventory.yml /home/rundeck/inventory.yml
 
 ENV SERVER_URL=http://localhost:7440 \
