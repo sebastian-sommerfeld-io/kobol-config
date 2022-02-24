@@ -1,0 +1,11 @@
+---
+pegasus:
+  nodename: pegasus
+  hostname: pegasus
+  description: Vagrantbox Pegasus
+  username: vagrant
+  osFamily: unix
+  node-executor: jsch-ssh
+  file-copier: jsch-scp
+  tags: Vagrantbox
+  osName: Linux

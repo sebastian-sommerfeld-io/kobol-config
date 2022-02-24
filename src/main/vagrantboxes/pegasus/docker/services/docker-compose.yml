@@ -52,6 +52,7 @@ services:
     container_name: rundeck
     command: -Dserver.http.port=7440
     tty: true
+    network_mode: "host"
     volumes:
       - rundeck_data:/home/rundeck/server/data
     ports:
