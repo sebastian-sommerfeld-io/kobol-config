@@ -1,10 +1,19 @@
 - defaultTab: nodes
   description: ''
   executionEnabled: true
-  id: 5562ed5e-8d7b-4451-8963-73ea418ac57a
+  id: ded1fc21-6944-43c9-a471-6da6a745ac30
   loglevel: INFO
-  name: System information IMPORTED
+  name: System information
   nodeFilterEditable: false
+  nodefilters:
+    dispatch:
+      excludePrecedence: true
+      keepgoing: false
+      rankOrder: ascending
+      successOnEmptyNodeFilter: false
+      threadcount: '1'
+    filter: .*
+  nodesSelectedByDefault: true
   plugins:
     ExecutionLifecycle: null
   scheduleEnabled: true
@@ -17,5 +26,5 @@
     - description: HDD
       exec: df -h
     keepgoing: false
-    strategy: parallel
-  uuid: 5562ed5e-8d7b-4451-8963-73ea418ac57a
+    strategy: node-first
+  uuid: ded1fc21-6944-43c9-a471-6da6a745ac30

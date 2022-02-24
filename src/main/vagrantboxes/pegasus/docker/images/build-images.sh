@@ -37,3 +37,4 @@ function buildImage() {
 
 # Build images
 buildImage "rundeck"
+buildImage "rundeck-cli"

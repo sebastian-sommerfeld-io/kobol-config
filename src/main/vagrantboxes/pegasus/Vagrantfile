@@ -37,6 +37,7 @@ Vagrant.configure(2) do |config|
         pegasus.vm.provision "shell", path: "provision/install/node.sh"
         pegasus.vm.provision "shell", path: "provision/install/node-apps.sh"
         pegasus.vm.provision "shell", path: "provision/install/shdoc.sh"
+        pegasus.vm.provision "shell", path: "initialize/rundeck/init.sh"
 
         # in use -> see src/main/vagrantboxes/pegasus/docker/services/docker-compose.yml
         pegasus.vm.network "forwarded_port", host: 7100, guest: 9100
