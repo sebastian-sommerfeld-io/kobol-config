@@ -54,14 +54,14 @@ docker run --rm --network=host "$IMAGE:$TAG" rd projects create --project="$RD_P
    --service.FileCopier.default.provider='jsch-scp' \
    --service.NodeExecutor.default.provider='jsch-ssh'
 
-for job in assets/jobs/*.yaml
-do
-  echo "[INFO] Import job: $job"
-
-  docker run --rm --network=host \
-    --volume "$(pwd):/jobs" \
-    --workdir "/jobs" \
-    "$IMAGE:$TAG" rd jobs load --file "$job" --format yaml --project="$RD_PROJECT"
-done
+#for job in assets/jobs/*.yaml
+#do
+#  echo "[INFO] Import job: $job"
+#
+#  docker run --rm --network=host \
+#    --volume "$(pwd):/jobs" \
+#    --workdir "/jobs" \
+#    "$IMAGE:$TAG" rd jobs load --file "$job" --format yaml --project="$RD_PROJECT"
+#done
 
 echo "[DONE] Finished Rundeck initialization"

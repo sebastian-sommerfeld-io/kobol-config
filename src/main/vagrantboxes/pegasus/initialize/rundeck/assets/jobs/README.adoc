@@ -1,0 +1,3 @@
+= README
+
+Files are managed by rundeck container. SCM configuration means that rundeck pushed to and pulls from this repo. Jobs are placed inside this folder.

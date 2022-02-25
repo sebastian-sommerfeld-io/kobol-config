@@ -12,3 +12,5 @@ The following services are up and running when the Vagrantbox is started (and pr
 Ports link:http://localhost:7313[7313] and link:http://localhost:7888[7888] are forwarded for use with "sommerfeld-io/website" repository.
 
 Additionally ports link:http://localhost:7000[7000] and link:http://localhost:7080[7080] are forwarded as well to avoid the need for restarts or reloads everytime a service is started inside the Vagrantbox.
+
+The Rundeck configuration instructs Rundeck to sync all jobs with this projects remote repository on gitlab.com. So jobs can be mathroug
