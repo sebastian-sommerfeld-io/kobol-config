@@ -47,11 +47,33 @@ for alias in "${aliases[@]}"; do
 done
 echo "[DONE] Added aliases to $home/.bashrc (if not existing)"
 
-# Setup symlinks for Docker wrapper scripts
-sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/groovy.sh /usr/bin/groovy
-sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/hugo.sh /usr/bin/hugo
-sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/mvn.sh /usr/bin/mvn
-sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/python.sh /usr/bin/py
-sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/shellcheck.sh /usr/bin/shellcheck
-sudo ln -s /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/yamllint.sh /usr/bin/yamllint
+# @description Write an entry to /usr/bin for a given script to make it executable from everywhere. Permissions are set
+# to ``+x`` as well.
+#
+# @arg $1 string Path to the actual script <mandatory>
+# @arg $2 string Name of the executable (without /usr/bin) <mandatory>
+function set_executable() {
+  if [ -z "$1" ]
+  then
+    echo -e "$LOG_ERROR Param missing -> exit"
+    exit 0
+  fi
+
+  if [ -z "$2" ]
+  then
+    echo -e "$LOG_ERROR Param missing -> exit"
+    exit 0
+  fi
+
+  echo "[INFO] Create symlink for /usr/bin/$2"
+  sudo ln -s "$1" "/usr/bin/$2"
+  chmod +x "/usr/bin/$2"
+}
+
+set_executable /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/groovy.sh groovy
+set_executable /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/hugo.sh hugo
+set_executable /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/mvn.sh mvn
+set_executable /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/python.sh py
+set_executable /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/shellcheck.sh shellcheck
+set_executable /home/vagrant/work/repos/sommerfeld.sebastian/kobol-configuration/src/main/vagrantboxes/pegasus/provision/wrappers/yamllint.sh yamllint
 echo "[DONE] Symlink setup for Docker wrapper scripts"

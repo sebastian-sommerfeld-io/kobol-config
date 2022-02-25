@@ -52,9 +52,9 @@ services:
     container_name: rundeck
     command: -Dserver.http.port=7440
     tty: true
-    network_mode: "host"
     volumes:
       - rundeck_data:/home/rundeck/server/data
+      - ./assets/rundeck/inventory.yml:/home/rundeck/inventory.yml
       - /home/vagrant/.gitconfig:/home/rundeck/.gitconfig:ro
       - /home/vagrant/.ssh:/home/rundeck/.ssh:ro
     ports:

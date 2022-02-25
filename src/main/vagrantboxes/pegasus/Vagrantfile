@@ -14,8 +14,8 @@ Vagrant.configure(2) do |config|
         pegasus.vm.hostname = HOSTNAME
 
         pegasus.vm.provider "virtualbox" do |v|
-            v.memory = 8192
-            v.cpus = 4
+            v.memory = 1024*12
+            v.cpus = 3
             v.customize ["modifyvm", :id, "--groups", "/vagrantboxes"]
             v.name = HOSTNAME
         end

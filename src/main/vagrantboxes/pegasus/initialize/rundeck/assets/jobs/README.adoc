@@ -1,3 +1,8 @@
 = README
+:imagesdir: ../../../../../../../../docs/modules/ROOT/assets/images
 
-Files are managed by rundeck container. SCM configuration means that rundeck pushed to and pulls from this repo. Jobs are placed inside this folder.
+include::../../../../../../../../docs/modules/ROOT/partials/vagrantboxes/pegasus/rundeck.adoc[]
+
+git@gitlab.com:sommerfeld.sebastian/kobol-configuration.git
+
+src/main/vagrantboxes/pegasus/initialize/rundeck/assets/jobs/${job.name}-${job.id}.${config.format}

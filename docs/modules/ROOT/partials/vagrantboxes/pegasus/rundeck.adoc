@@ -1,0 +1,3 @@
+The Rundeck configuration instructs Rundeck to sync all jobs with this projects remote repository on gitlab.com. The job definition files are managed by the Rundeck container. link:https://docs.rundeck.com/docs/administration/projects/scm/git.html#git-export-configuration[SCM Export and SCM Import] is enabled meaning that Rundeck pushes  to and pulls from this repo. Jobs definitions are stored inside folder `src/main/vagrantboxes/pegasus/initialize/rundeck/assets/jobs`.
+
+image::vagrantboxes/pegasus/rundeck.drawio.png[]
