@@ -1,3 +1,4 @@
+---
 - defaultTab: nodes
   description: ''
   executionEnabled: true
@@ -19,12 +20,12 @@
   scheduleEnabled: true
   sequence:
     commands:
-    - description: hostname
-      exec: echo "$HOSTNAME"
-    - description: uptime
-      exec: uptime
-    - description: HDD
-      exec: df -h
+      - description: hostname
+        exec: echo "$HOSTNAME"
+      - description: uptime
+        exec: uptime
+      - description: HDD
+        exec: df -h
     keepgoing: false
     strategy: node-first
   uuid: ded1fc21-6944-43c9-a471-6da6a745ac30
