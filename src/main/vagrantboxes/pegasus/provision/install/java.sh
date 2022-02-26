@@ -12,5 +12,6 @@
 
 
 echo "[INFO] Install Java"
-sudo apt-get install -y openjdk-16-jdk
+sudo apt-get install -y openjdk-17-jdk
 echo "[DONE] Installed Java"
+w
