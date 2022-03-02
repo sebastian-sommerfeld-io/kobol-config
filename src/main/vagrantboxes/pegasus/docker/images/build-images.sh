@@ -25,16 +25,15 @@ function buildImage() {
     exit 0
   fi
 
-  echo "[INFO] Building $IMAGE_PREFIX/$1:$IMAGE_TAG"
+  echo "[INFO] Building '$IMAGE_PREFIX/$1:$IMAGE_TAG'"
   (
     cd "/vagrant/docker/images/$1" || exit
 
     echo "[INFO] Build image"
     docker build -t "$IMAGE_PREFIX/$1:$IMAGE_TAG" .
   )
-  echo "[DONE] Finished building $IMAGE_PREFIX/$1:$IMAGE_TAG"
+  echo "[DONE] Finished building '$IMAGE_PREFIX/$1:$IMAGE_TAG'"
 }
 
-# Build images
 buildImage "rundeck"
 buildImage "rundeck-cli"
