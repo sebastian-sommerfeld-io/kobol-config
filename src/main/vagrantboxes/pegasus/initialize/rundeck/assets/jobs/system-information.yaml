@@ -12,7 +12,7 @@
       rankOrder: ascending
       successOnEmptyNodeFilter: false
       threadcount: '1'
-    filter: .*
+    filter: tags:Vagrantbox
   nodesSelectedByDefault: true
   plugins:
     ExecutionLifecycle: null
