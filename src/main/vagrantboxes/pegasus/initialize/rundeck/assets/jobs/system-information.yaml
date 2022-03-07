@@ -12,7 +12,7 @@
       rankOrder: ascending
       successOnEmptyNodeFilter: false
       threadcount: '1'
-    filter: tags:Vagrantbox
+    filter: 'tags:Vagrantbox,RasPi'
   nodesSelectedByDefault: true
   plugins:
     ExecutionLifecycle: null
