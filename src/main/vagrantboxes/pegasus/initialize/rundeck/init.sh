@@ -54,14 +54,24 @@ docker run --rm --network=host "$IMAGE:$TAG" rd projects create --project="$RD_P
    --service.FileCopier.default.provider='jsch-scp' \
    --service.NodeExecutor.default.provider='jsch-ssh'
 
-#for job in assets/jobs/*.yaml
-#do
-#  echo "[INFO] Import job: $job"
-#
-#  docker run --rm --network=host \
-#    --volume "$(pwd):/jobs" \
-#    --workdir "/jobs" \
-#    "$IMAGE:$TAG" rd jobs load --file "$job" --format yaml --project="$RD_PROJECT"
-#done
+
+echo "[INFO] Upload ssh keys to Rundeck"
+(
+  cd /home/vagrant/.ssh || exit
+
+  keys=(
+    'id_rsa'
+#   'gitlab.key'
+  )
+
+  for k in "${keys[@]}"; do
+    docker run --rm --network=host \
+      --volume "$(pwd):$(pwd)" \
+      --workdir "$(pwd)" \
+      "$IMAGE:$TAG" rd keys create --file "$k" --path "keys/rundeck/$k" --type privateKey
+  done
+)
+
+echo "[INFO] Upload ssh keys to Rundeck"
 
 echo "[DONE] Finished Rundeck initialization"
