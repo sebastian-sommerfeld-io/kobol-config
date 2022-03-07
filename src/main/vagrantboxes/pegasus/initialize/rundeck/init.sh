@@ -55,23 +55,32 @@ docker run --rm --network=host "$IMAGE:$TAG" rd projects create --project="$RD_P
    --service.NodeExecutor.default.provider='jsch-ssh'
 
 
-echo "[INFO] Upload ssh keys to Rundeck"
-(
-  cd /home/vagrant/.ssh || exit
-
-  keys=(
-    'id_rsa'
-#   'gitlab.key'
-  )
-
-  for k in "${keys[@]}"; do
-    docker run --rm --network=host \
-      --volume "$(pwd):$(pwd)" \
-      --workdir "$(pwd)" \
-      "$IMAGE:$TAG" rd keys create --file "$k" --path "keys/rundeck/$k" --type privateKey
-  done
-)
-
-echo "[INFO] Upload ssh keys to Rundeck"
+## @description Add given ssh key to Rundeck global key storage.
+##
+## @arg $1 string The ssh key filename
+#function configure_ssh_key() {
+#  if [ -z "$1" ]
+#  then
+#    echo -e "$LOG_ERROR Param missing: The ssh key filename"
+#    echo -e "$LOG_ERROR exit"
+#    exit 0
+#  fi
+#
+#  docker run --rm --network=host \
+#    --volume "$(pwd):$(pwd)" \
+#    --workdir "$(pwd)" \
+#    "$IMAGE:$TAG" rd keys create --file "$1" --path "keys/rundeck/$1" --type privateKey
+#}
+#
+#echo "[INFO] Upload ssh keys to Rundeck (iterate through ~/.ssh)"
+#(
+#  cd /home/vagrant/.ssh || exit
+#
+#  for k in *.key; do
+#    configure_ssh_key "$k"
+#  done
+#
+#  configure_ssh_key id_rsa
+#)
 
 echo "[DONE] Finished Rundeck initialization"
