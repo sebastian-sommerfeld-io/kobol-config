@@ -50,5 +50,5 @@
       - description: python version (py)
         exec: py --version
     keepgoing: false
-    strategy: node-first
+    strategy: parallel
   uuid: ded1fc21-6944-43c9-a471-6da6a745ac30
