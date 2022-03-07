@@ -34,21 +34,21 @@
       - description: HDD
         exec: df -h
       - description: git version
-        exec: git --version
+        exec: echo "$(git --version)"
       - description: node version
-        exec: node --version
+        exec: echo "$(node --version)"
       - description: npm version
-        exec: npm --version
+        exec: echo "$(npm --version)"
       - description: java version
-        exec: java -version
+        exec: echo "$(java -version)"
       - description: which java
-        exec: which java
+        exec: echo "$(which java)"
       - description: maven version
-        exec: mvn --version
+        exec: echo "$(mvn --version)"
       - description: groovy version
-        exec: groovy --version
+        exec: echo "$(groovy --version)"
       - description: python version (py)
-        exec: py --version
+        exec: echo "$(py --version)"
     keepgoing: false
-    strategy: parallel
+    strategy: sequential
   uuid: ded1fc21-6944-43c9-a471-6da6a745ac30

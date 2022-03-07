@@ -3,7 +3,8 @@ LABEL maintainer="sebastian@sommerfeld.io"
 
 USER root
 RUN apt-get update \
-    && apt-get install -y git
+    && apt-get install -y git \
+    && apt-get install -y sshpass
 
 #USER "${uid}:${gid}"
 USER rundeck:0
