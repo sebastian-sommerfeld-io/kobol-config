@@ -1,6 +1,7 @@
 - defaultTab: nodes
   description: ''
   executionEnabled: true
+  group: Reporting
   id: ded1fc21-6944-43c9-a471-6da6a745ac30
   loglevel: INFO
   name: System information
