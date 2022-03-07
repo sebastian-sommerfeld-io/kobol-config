@@ -9,7 +9,7 @@ RUN apt-get update \
 USER rundeck:0
 RUN mkdir -p /home/rundeck/repos
 
-COPY assets/.gitconfig ~/.gitconfig
+COPY assets/.gitconfig /home/rundeck/.gitconfig
 
 ENV SERVER_URL=http://localhost:7440 \
     RUNDECK_GRAILS_URL=http://localhost:7440 \
