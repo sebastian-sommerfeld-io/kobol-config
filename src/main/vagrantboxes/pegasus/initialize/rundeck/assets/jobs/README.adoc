@@ -2,7 +2,3 @@
 :imagesdir: ../../../../../../../../docs/modules/ROOT/assets/images
 
 include::../../../../../../../../docs/modules/ROOT/partials/vagrantboxes/pegasus/rundeck.adoc[]
-
-git@gitlab.com:sommerfeld.sebastian/kobol-configuration.git
-
-src/main/vagrantboxes/pegasus/initialize/rundeck/assets/jobs/${job.name}-${job.id}.${config.format}

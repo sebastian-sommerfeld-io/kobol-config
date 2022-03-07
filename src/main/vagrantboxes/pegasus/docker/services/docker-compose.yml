@@ -55,7 +55,7 @@ services:
     volumes:
       - rundeck_data:/home/rundeck/server/data
       - ./assets/rundeck/inventory.yml:/home/rundeck/inventory.yml
-      - /home/vagrant/.gitconfig:/home/rundeck/.gitconfig:ro
+      #- /home/vagrant/.gitconfig:/home/rundeck/.gitconfig:ro
       - /home/vagrant/.ssh:/home/rundeck/.ssh:ro
     ports:
       - 7440:7440

@@ -35,5 +35,6 @@ function buildImage() {
   echo "[DONE] Finished building '$IMAGE_PREFIX/$1:$IMAGE_TAG'"
 }
 
+buildImage "git"
 buildImage "rundeck"
 buildImage "rundeck-cli"
