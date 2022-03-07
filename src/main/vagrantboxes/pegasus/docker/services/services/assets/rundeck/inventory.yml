@@ -9,3 +9,13 @@ pegasus:
   file-copier: jsch-scp
   tags: Vagrantbox
   osName: Linux
+prometheus:
+  nodename: prometheus
+  hostname: prometheus
+  description: RasPi
+  username: pi
+  osFamily: unix
+  node-executor: jsch-ssh
+  file-copier: jsch-scp
+  tags: RasPi
+  osName: Linux
