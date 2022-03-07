@@ -23,7 +23,6 @@ Vagrant.configure(2) do |config|
         # copy files and mount shared volumes
         pegasus.ssh.forward_agent = true # If true, agent forwarding over SSH connections is enabled. Defaults to false.
         pegasus.vm.provision "file", source: "~/.ssh", destination: "/home/vagrant/.ssh"
-#         pegasus.vm.provision "file", source: "~/.gitconfig", destination: "/home/vagrant/.gitconfig"
         pegasus.vm.synced_folder "~/tmp", "/home/vagrant/tmp"
         pegasus.vm.synced_folder "~/work", "/home/vagrant/work"
 
@@ -34,7 +33,8 @@ Vagrant.configure(2) do |config|
         pegasus.vm.provision "shell", path: "provision/ssh-keys.sh", privileged: false # Use default user (vagrant) instead of root
         pegasus.vm.provision :docker
         pegasus.vm.provision "shell", path: "docker/images/build-images.sh"
-        pegasus.vm.provision :docker_compose, yml: "/vagrant/docker/services/docker-compose.yml", run: "always"
+        pegasus.vm.provision :docker_compose, yml: "/vagrant/docker/services/ops/docker-compose.yml", run: "always"
+        pegasus.vm.provision :docker_compose, yml: "/vagrant/docker/services/services/docker-compose.yml", run: "always"
         pegasus.vm.provision "shell", path: "provision/install/update-upgrade.sh"
         pegasus.vm.provision "shell", path: "provision/install/basic-packages.sh"
         pegasus.vm.provision "shell", path: "provision/install/java.sh"

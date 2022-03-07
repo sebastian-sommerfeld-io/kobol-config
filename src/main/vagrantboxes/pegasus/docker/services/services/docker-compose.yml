@@ -1,0 +1,19 @@
+---
+version: "3.3"
+services:
+
+  # Schedule tasks and jobs
+  rundeck:
+    image: pegasus/rundeck:latest
+    container_name: rundeck
+    command: -Dserver.http.port=7440
+    tty: true
+    volumes:
+      - rundeck_data:/home/rundeck/server/data
+      - ./assets/rundeck/inventory.yml:/home/rundeck/inventory.yml
+      - /home/vagrant/.ssh:/home/rundeck/.ssh:ro
+    ports:
+      - 7440:7440
+
+volumes:
+  rundeck_data:
