@@ -9,6 +9,7 @@
 # * ca-certificates
 # * gnupg-agent
 # * software-properties-common
+# * net-tools (= netstat and stuff)
 #
 # Additionally the script installs basic software packages:
 #
@@ -36,6 +37,7 @@ sudo apt-get install -y apt-transport-https
 sudo apt-get install -y ca-certificates
 sudo apt-get install -y gnupg-agent
 sudo apt-get install -y software-properties-common
+sudo apt-get install -y net-tools
 echo "[DONE] Installed prerequisites"
 
 echo "[INFO] Install basic tools"
