@@ -24,7 +24,7 @@ echo -e "$LOG_INFO Working dir = $(pwd)"
 IMAGE="pegasus/git"
 TAG="latest"
 
-docker run -t --rm --name git_client  \
+docker run -t --rm  \
   --volume "/home/vagrant/.ssh:/home/bitnami/.ssh:ro" \
   --volume "$(pwd):$(pwd)" \
   --workdir "$(pwd)" \
