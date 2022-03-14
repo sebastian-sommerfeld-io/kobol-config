@@ -36,5 +36,7 @@ function buildImage() {
 }
 
 buildImage "git"
+buildImage "jq"
 buildImage "rundeck"
 buildImage "rundeck-cli"
+buildImage "yq"

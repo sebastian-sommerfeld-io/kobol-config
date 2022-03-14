@@ -43,8 +43,6 @@ echo "[DONE] Installed prerequisites"
 echo "[INFO] Install basic tools"
 sudo apt-get install -y ncdu
 sudo apt-get install -y neofetch
-sudo apt-get install -y jq
-snap install yq
 echo "[DONE] Installed basic tools"
 
 echo "[INFO] Print version information"
