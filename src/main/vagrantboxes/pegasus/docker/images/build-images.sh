@@ -20,8 +20,8 @@ export IMAGE_TAG="latest"
 function buildImage() {
   if [ -z "$1" ]
   then
-    echo -e "$LOG_ERROR Param missing: image_name"
-    echo -e "$LOG_ERROR exit"
+    echo "[ERROR] Param missing: image_name"
+    echo "[ERROR] exit"
     exit 0
   fi
 
