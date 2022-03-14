@@ -23,9 +23,9 @@ services:
     container_name: cadvisor
     restart: always
     expose:
-      - 7101
+      - 7110
     ports:
-      - 7101:8080
+      - 7110:8080
     volumes:
       - /:/rootfs:ro
       - /var/run:/var/run:rw

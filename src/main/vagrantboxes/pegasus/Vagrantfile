@@ -43,7 +43,7 @@ Vagrant.configure(2) do |config|
 
         # in use -> see src/main/vagrantboxes/pegasus/docker/services/docker-compose.yml
         pegasus.vm.network "forwarded_port", host: 7100, guest: 9100
-        pegasus.vm.network "forwarded_port", host: 7101, guest: 7101
+        pegasus.vm.network "forwarded_port", host: 7110, guest: 7110
         pegasus.vm.network "forwarded_port", host: 7440, guest: 7440
         pegasus.vm.network "forwarded_port", host: 7990, guest: 7990
 
