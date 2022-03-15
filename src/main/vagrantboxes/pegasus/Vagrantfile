@@ -3,6 +3,7 @@
 
 IMAGE_NAME = "ubuntu/impish64" # impish = 21.10 | bento/ubuntu-21.10
 HOSTNAME = "pegasus"
+IP="10.42.10.10"
 
 Vagrant.configure(2) do |config|
 
@@ -12,11 +13,17 @@ Vagrant.configure(2) do |config|
     config.vm.define HOSTNAME do |pegasus|
         pegasus.vm.box = IMAGE_NAME
         pegasus.vm.hostname = HOSTNAME
+        pegasus.vm.network :private_network, ip: IP
+
+        if Vagrant.has_plugin?("vagrant-cachier")
+            pegasus.cache.scope = :box # Configure cached packages to be shared between instances of the same base box
+        end
 
         pegasus.vm.provider "virtualbox" do |v|
             v.memory = 1024*12
             v.cpus = 2
             v.customize ["modifyvm", :id, "--groups", "/vagrantboxes"]
+            # v.customize ["modifyvm", :id, "--ioapic", "on"] # https://www.mkwd.net/improve-vagrant-performance/
             v.name = HOSTNAME
         end
 
@@ -52,7 +59,6 @@ Vagrant.configure(2) do |config|
         pegasus.vm.network "forwarded_port", host: 7080, guest: 7080 # free
         pegasus.vm.network "forwarded_port", host: 7081, guest: 7081 # free
         pegasus.vm.network "forwarded_port", host: 7443, guest: 7443 # free
-        pegasus.vm.network "forwarded_port", host: 7313, guest: 1313 # sommerfeld-io/website
-        pegasus.vm.network "forwarded_port", host: 7888, guest: 9888 # sommerfeld-io/website
+        pegasus.vm.network "forwarded_port", host: 7888, guest: 7888 # sommerfeld-io/website
     end
 end
