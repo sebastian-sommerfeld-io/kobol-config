@@ -1,7 +1,0 @@
-== Requirements Overview
-. A simple Vagrantbox for testing and evaluation purposes is required.
-. There are no further requirements. Just a simple environment.
-
-== Quality Goals
-. The whole setup of is Infrastructure as Code.
-. Software installations through the classic package managers like `apt` should be avoided. Although this is just an afterthought since this Vagrantbox is just a playground.

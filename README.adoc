@@ -1,23 +1,13 @@
 = Kobol Configuration
 Sebastian Sommerfeld <sebastian@sommerfeld.io>
-:imagesdir: docs/modules/ROOT/assets/images
+:project-name: kobol-config
+:url-project: https://github.com/sebastian-sommerfeld-io/{project-name}
 
-include::docs/modules/ROOT/partials/startpage/01-intro.adoc[]
+Setup, configuration and documentation for my local Ubuntu workstation following an infrastructure as code approach.
 
-include::docs/modules/ROOT/partials/startpage/02-project-name.adoc[]
-
-include::docs/modules/ROOT/partials/startpage/03-requirements-and-goals.adoc[]
-
-include::docs/modules/ROOT/partials/startpage/04-install.adoc[]
-
-include::docs/modules/ROOT/partials/startpage/05-usage.adoc[]
-
-include::docs/modules/ROOT/partials/startpage/06-building-block-view.adoc[]
-
-include::docs/modules/ROOT/partials/startpage/07-architecture-decisions.adoc[]
-
-include::docs/modules/ROOT/partials/startpage/08-technical-risks.adoc[]
-
-include::docs/modules/ROOT/partials/startpage/10-license.adoc[]
-
-include::docs/modules/ROOT/partials/startpage/09-contact.adoc[]
+[cols="1,4", options="header"]
+|===
+|What |Where to find
+|Repository |{url-project}
+|Documentation |https://www.sommerfeld.io/docs/{project-name}-docs/main
+|===

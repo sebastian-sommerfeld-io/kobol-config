@@ -1,17 +1,11 @@
-:project-name: kobol-configuration
-:url-project: https://gitlab.com/sommerfeld.sebastian/{project-name}
-:url-ci-pipelines: {url-project}/pipelines
-:img-ci-status: {url-project}/badges/main/pipeline.svg
+:project-name: kobol-config
+:url-project: https://github.com/sebastian-sommerfeld-io/{project-name}
 
 Setup, configuration and documentation for my local Ubuntu workstation following an infrastructure as code approach.
-
-image:{img-ci-status}[CI Status (GitLab CI), link={url-ci-pipelines}]
 
 [cols="1,4", options="header"]
 |===
 |What |Where to find
-|Repository |+++<i class="fab fa-gitlab"></i>+++ {url-project}
-|Documentation |+++<i class="far fa-file-alt"></i>+++ https://www.sommerfeld.io/docs/{project-name}-docs/main
+|Repository |{url-project}
+|Documentation |https://www.sommerfeld.io/docs/{project-name}-docs/main
 |===
-
-This repository contains Vagrantboxes containing my development environment. Development tools are delegated to Vagrantbox to make sure everything can be set up from scratch easily.

@@ -1,5 +1,1 @@
 * xref:ROOT:index.adoc[]
-* Vagrantboxes
-** xref:ROOT:vagrantboxes/alpine64.adoc[]
-** xref:ROOT:vagrantboxes/pegasus.adoc[]
-** xref:ROOT:vagrantboxes/ubuntu-headless.adoc[]

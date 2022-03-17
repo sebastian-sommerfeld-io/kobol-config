@@ -1,6 +1,2 @@
 == Contact
 Feel free to contact me via sebastian@sommerfeld.io or visit my website link:https://www.sommerfeld.io[www.sommerfeld.io].
-
-=== Report Bugs
-Gitlab.com's Service Desk feature is used to handle bugs. To report bugs, just mail to
-contact-project+sommerfeld-sebastian-kobol-configuration-33867467-issue-@incoming.gitlab.com.

@@ -1,4 +1,4 @@
-= Kobol Configuration
+= Kobol Config
 Sebastian Sommerfeld <sebastian@sommerfeld.io>
 
 include::partial$startpage/01-intro.adoc[]

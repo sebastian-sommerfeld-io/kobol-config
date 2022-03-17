@@ -1,1 +1,0 @@
-include::ROOT:partial$startpage/03-requirements-and-goals.adoc[]
