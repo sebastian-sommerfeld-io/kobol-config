@@ -8,12 +8,11 @@ Download and install a fresh link:https://ubuntu.com[Ubuntu] from an iso image:
 Once the basic OS is installed, perform the following steps on your machine:
 
 . Choose NVIDIA graphics driver from "Additional Drivers"
-. Clone or download this repository to some tmp folder (git clone https://gitlab.com/sommerfeld.sebastian/kobol-configuration.git)
+. Clone or download this repository to some tmp folder (`git clone https://github.com/sebastian-sommerfeld-io/kobol-config.git`)
 . Run `src/main/host/setup/10-configure.sh` -> Basic configuration and .bashrc settings
 . Run `src/main/host/setup/20-install.sh` -> Install software packages
-. Run `src/main/host/setup/30-conky.sh` -> Install and configure conky
-. Run `src/main/host/setup/90-wallpaper.sh` -> Copy wallpaper images and select one as desktop wallpaper
-. Run `src/main/host/setup/99-start-services.sh` -> Start basic services and docker containers which are always running
+. Run `src/main/host/setup/21-install-intellij.sh` -> Install IntelliJ
+. Run `src/main/host/setup/90-start-services.sh` -> Start basic services and docker containers which are always running
 . Enable Dark Mode
 . Add `~/work`, `~/temp` and `~/virtualmachines` to favourites (in File Manager)
 . Login to Firefox Sync
