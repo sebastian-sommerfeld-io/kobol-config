@@ -10,5 +10,5 @@
 
 
 echo -e "$LOG_INFO Install java"
-sudo apt-get install -y openjdk-16-jre # java
+sudo apt-get install -y openjdk-16-jre
 echo -e "$LOG_DONE Installed java"
