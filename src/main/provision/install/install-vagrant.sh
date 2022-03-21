@@ -14,8 +14,10 @@
 # The script does not accept any parameters.
 
 
-echo -e "$LOG_INFO Install vagrant and plugins"
+echo -e "$LOG_INFO Install vagrant"
 sudo apt-get install -y vagrant
+
+echo -e "$LOG_INFO Install vagrant plugins"
 vagrant plugin install vagrant-cachier
 vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-docker-compose

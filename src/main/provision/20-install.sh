@@ -25,8 +25,8 @@ bash install/install-raspi-imager.sh
 bash install/install-slack.sh
 bash install/install-ssh-server.sh
 bash install/install-sublime.sh
-bash install/install-vagrant.sh
 bash install/install-virtualbox.sh
+bash install/install-vagrant.sh
 bash install/remove-software.sh
 
 echo -e "$LOG_DONE Software installations finished"
