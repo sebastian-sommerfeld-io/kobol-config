@@ -9,5 +9,5 @@ Setup, configuration and documentation for my local Ubuntu workstation following
 |===
 |What |Where to find
 |Repository |{url-project}
-|Documentation |https://www.sommerfeld.io/docs/{project-name}-docs/main
+|Documentation |https://docs.sommerfeld.io/{project-name}-docs/main
 |===
