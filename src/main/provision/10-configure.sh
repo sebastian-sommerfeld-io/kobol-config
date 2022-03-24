@@ -56,7 +56,6 @@ folders=(
   "$HOME/work/repos"
   "$HOME/work/provinzial"
   "$HOME/work/tools"
-  "$HOME/work/tools/sdk-and-runtime"
   "$HOME/virtualmachines"
   "$HOME/tmp"
   "$HOME/.ssh"
