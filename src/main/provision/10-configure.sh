@@ -29,7 +29,7 @@ entries=(
   'alias ls="ls -a --color=auto"'
   'alias grep="grep --color=auto"'
   'alias pull-all-repos="git all pull"'
-  "alias reset-conky=\"killall conky && $HOME/work/repos/sommerfeld.sebastian/kobol/src/main/conky/start.sh\""
+  "alias reset-conky=\"killall conky && $HOME/work/repos/sebastian-sommerfeld-io/kobol-config/src/main/conky/run.sh\""
   "alias reset-sound=\"pulseaudio --start\""
   "alias slack-send-msg=\"$HOME/work/repos/sommerfeld.sebastian/kobol/src/main/util/slack/send-simple-message.sh\""
   "cheatsheet() { clear && curl \"cheat.sh/\$1\" ; }"
