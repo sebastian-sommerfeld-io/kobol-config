@@ -22,5 +22,14 @@ echo -e "$LOG_INFO Copy launcher to autostart"
 cp "assets/conky-launcher.desktop" "$HOME/.config/autostart/conky-launcher.desktop"
 
 echo -e "$LOG_INFO Start all conky instances in background"
-sleep 120 && conky -c "$HOME/work/repos/sebastian-sommerfeld-io/kobol-config/src/main/conky/.conkyrc" &
-sleep 120 && conky -c "$HOME/work/repos/sebastian-sommerfeld-io/kobol-config/src/main/conky/.conkyrc_services" &
+sleep 1
+CONKY_PATH="$HOME/work/repos/sebastian-sommerfeld-io/kobol-config/src/main/conky"
+conkyDefinitions=(
+  "$CONKY_PATH/.conkyrc"
+  "$CONKY_PATH/.conkyrc_services"
+)
+for definition in "${conkyDefinitions[@]}"
+do
+  echo -e "$LOG_INFO Start Instance"
+  conky -c "$definition" &
+done
