@@ -1,8 +1,0 @@
-== Requirements Overview
-. Setup my local workstation with minimal manual interactions.
-. Add or update packages without any risk -> avoid having to repair broken installations (dumping the broken setup and reverting to a working one is preferred).
-. Test the setup regularly (automated) to ensure a new installation from scratch will work.
-
-== Quality Goals
-. The whole setup of my local workstation, all my Vagrantboxes and all my Docker Images is Infrastructure as Code.
-. Software installations through the classic package managers like `apt` should be avoided. As much as possible should run inside docker containers. This is true for the host machine as well as Vagrantboxes.

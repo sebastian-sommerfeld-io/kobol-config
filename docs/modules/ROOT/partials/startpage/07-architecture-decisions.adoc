@@ -1,2 +1,0 @@
-== Architecture Decisions
-Services and tools should be encapsulated to make sure a working environment can always be started. This way running any update comes without any risk because reverting to a working setup can be done easily. Therefore Vagrantboxes and Docker Containers are the tools of choise in order to isolate services and tools from the host machine.
