@@ -1,7 +1,0 @@
----
-name: kobol-config-docs
-title: Kobol Config Docs
-version: main
-start_page: ROOT:index.adoc
-nav:
-  - modules/ROOT/nav.adoc
